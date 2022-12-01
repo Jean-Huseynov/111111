@@ -1,0 +1,226 @@
+// Footer
+
+.footer {
+    width: 480px;
+        padding: 0 15px;
+        margin: 0 auto;
+    background: #2F303A;
+}
+
+.footer__container {
+    padding: 60px 0;
+    justify-content: center;
+    // align-items: baseline;
+}
+
+
+
+.footer__block-address {
+    text-align: center;
+}
+
+
+
+
+// //address
+// .footer__address {
+//     justify-content: center;
+//     margin: 0;
+// }
+
+
+
+
+.address__item {
+    margin-top: 28px;
+}
+
+
+// address - mailto - tel.
+.address__link {
+    justify-content: center;
+
+@extend %Main-page__text;
+
+    color: $color-address-text;
+
+    transition-property: color;
+@extend %animation;
+
+    &:hover,
+        &:focus {
+            color: $color-hover-focus;
+        }
+}
+
+.address__link-color {
+    color: $color-accent;
+
+    transition-property: color;
+        @extend %animation;
+
+.address__link:hover &,
+.address__link:focus & {
+    color: $color-hover-focus;
+}
+}
+
+.address__block .item {
+    margin: 0;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+// footer-block div 2 ПРИЄДНУЙТЕСЬ
+.footer__block-smm {
+margin-top: 60px;
+}
+.footer__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @extend %Main-page__block-title;
+
+    color: $color-accent;
+}
+
+// /* ul */
+.footer__block-icon {
+    display: flex;
+    justify-content: center;
+    grid-column-gap: 10px;
+}
+
+
+
+// /* smm icon */
+// /* li */
+.footer__section-icon {
+    border-radius: 50%;
+
+    transition-property: background;
+@extend %animation;
+
+    &:hover,
+        &:focus {
+            background: $color-hover-focus;
+        }
+}
+
+
+
+// /* a */
+.footer__icon-linck {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition-property: background;
+    @extend %animation;
+
+    &:hover,
+        &:focus {
+            background: $color-hover-focus;
+        }
+}
+
+
+
+
+
+// /* svg */
+.footer__icon {
+    fill: #FFFFFF;
+
+    transition-property: fill;
+    @extend %animation;
+
+.footer-icon-block-linck:hover &,
+    .footer-icon-block-linck:focus & {
+        fill: #FFFFFF;
+    }
+}
+
+
+
+
+
+
+
+
+// /* footer-email div 3 */
+.footer__email {
+    margin-top: 60px;
+}
+
+.footer__form {
+    justify-content: center;
+    gap: 12px;
+}
+
+
+.input__footer {
+    // /* position: absolute; */
+    width: 450px;
+    height: 50px;
+    padding: 15px 16px;
+
+    background-color: rgba(47, 48, 58, 1);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+
+
+.footer__button {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    margin: 20px 125px 0px 125px;
+    padding: 10px 28px;
+    border: 0;
+    min-width: 200px;
+
+    @extend %button;
+
+    color: $color-accent;
+
+    background-color: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    cursor: pointer;
+    
+    transition-property: color, background, cursor;
+@extend %animation;
+
+
+&:hover,
+&:focus {
+        color: $color-accent;
+        background: $color-hover-focus;
+        cursor: pointer;
+    }
+}
+
+
+
+
+.footer__button-svg {
+    fill: rgba(255, 255, 255, 1);
+}
+
