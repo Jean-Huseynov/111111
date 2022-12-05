@@ -25,7 +25,6 @@
 
 
 
-
 // SITE-NAV
 // .nav-container {
 //     position: relative;
@@ -38,20 +37,20 @@
     padding: 0;
     background: $color-accent;
     border: none;
-    fill: $color-title;
+    // fill: red;
 }
 
-// .nav-container__button .nav-container__icon-cross {
-//     display: none;
+// .nav-container__icon-color {
+//     fill: red;
 // }
 
-// .nav-container__button.is-open .nav-container__icon-cross {
-//     display: block;
+// .nav-container__button:hover,
+// .nav-container__button:focus {
+// fill: $color-hover-focus;
+// cursor: pointer;
 // }
 
-// .nav-container__button.is-open .nav-container__icon-menu {
-//     display: none;
-// }
+
 
 
 .nav-container__icon-menu {
@@ -79,14 +78,8 @@ display: none;
     padding: 0;
     margin: 0;
 
-    background: rgb(255, 0, 0, 0.5);
+    background: rgba(0, 6, 122, 0.5);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-
-    &.is-open {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
 }
 
 // .site-nav {
