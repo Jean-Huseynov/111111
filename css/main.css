@@ -59,7 +59,7 @@
   text-transform: uppercase;
 }
 
-.checkbox__link, .checkbox-label.text, .address__link, .card-set__line {
+.checkbox__link, .checkbox__label.text, .address__link, .card-set__line {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
@@ -894,7 +894,7 @@
   padding-left: 37px;
 }
 
-.checkbox-label.text {
+.checkbox__label.text {
   color: #757575;
 }
 

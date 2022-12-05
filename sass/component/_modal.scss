@@ -18,7 +18,6 @@
   pointer-events: none;
 }
 
-// @media screen and (min-width: 480px) {
 .modal {
   position: absolute;
   top: 50%;
@@ -33,7 +32,6 @@
   border-radius: 4px;
   transform: scale(1) translate(-50%, -50%);
 }
-// }
 
 .button-close {
   display: flex;
@@ -157,7 +155,6 @@
   fill: #2196f3;
 }
 
-// @media screen and (min-width: 480px) {
 .form__textarea {
   display: block;
   width: 370px;
@@ -184,7 +181,6 @@
     color: rgba(117, 117, 117, 0.5);
   }
 }
-// }
 
 // .textarea {
 //     font-family: inherit;
@@ -208,7 +204,7 @@
   padding-left: 37px;
 }
 
-.checkbox-label.text {
+.checkbox__label.text {
   @extend %Main-page__text;
 
   color: $color-text;
@@ -246,7 +242,6 @@
 
 .checkbox__link {
   position: relative;
-
   @extend %Main-page__text;
 
   color: rgba(33, 150, 243, 1);
