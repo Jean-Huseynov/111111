@@ -38,15 +38,37 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
 }
 
-// site-nav, Auth-nav.
-// @extend %nav__text;
-%nav__text {
+// site-nav
+// @extend %site-nav__link__text;
+%site-nav__link__text {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+// Auth-nav
+// @extend %auth-nav__mailto__text;
+%auth-nav__mailto__text {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+// @extend %auth-nav__link-tel;
+.auth-nav__link-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 }
 

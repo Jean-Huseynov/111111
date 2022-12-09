@@ -10,9 +10,9 @@
   margin: 0 auto;
 }
 
-.nav-container {
-  position: relative;
-}
+// .nav-container {
+//   position: relative;
+// }
 
 .nav-container__button {
   position: absolute;
@@ -26,11 +26,11 @@
   transition-property: fill, cursor;
   @extend %animation;
 
-  &:hover,
-  &:focus {
-    fill: $color-hover-focus;
-    cursor: pointer;
-  }
+  // &:hover,
+  // &:focus {
+  //   fill: $color-hover-focus;
+  //   cursor: pointer;
+  // }
 }
 
 .nav-container__icon-menu {
@@ -45,6 +45,14 @@
   display: none;
 }
 
+.nav-container__icon-color {
+  &:hover,
+  &:focus {
+    fill: $color-hover-focus;
+    cursor: pointer;
+  }
+}
+
 .menu-container {
   display: none;
 
@@ -52,13 +60,13 @@
 
   width: 480px;
   height: 796px;
-  left: -15px;
+  left: 0;
   top: 100%;
 
   padding: 0;
   margin: 0;
 
-  background: rgba(241, 2, 2, 0.5);
+  background: $color-accent;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -68,10 +76,13 @@
 }
 
 // Site-nav
-.site-nav__link {
-  display: none;
+.site-nav {
+  margin-top: 48px;
+  margin-left: 40px;
+}
 
-  @extend %nav__text;
+.site-nav__link {
+  @extend %site-nav__link__text;
 
   color: $color-title;
 
@@ -92,15 +103,18 @@
 }
 
 //AUTH-NAV
+.auth-nav {
+  display: block;
+  margin-top: 306px;
+  margin-left: 40px;
+}
 
 // tel
 .auth-nav__link {
-  display: none;
-
   align-items: center;
-  @extend %nav__text;
+  @extend %auth-nav__mailto__text;
 
-  color: $color-text;
+  color: $color-hover-focus;
 
   transition-property: color, cursor;
   @extend %animation;
@@ -110,6 +124,12 @@
     color: $color-hover-focus;
     cursor: pointer;
   }
+}
+
+.auth-nav__link.tel {
+  @extend %auth-nav__link-tel;
+
+  color: $color-text;
 }
 
 .auth-nav__icon-mailto {
