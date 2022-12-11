@@ -15,7 +15,27 @@
   letter-spacing: 0.03em;
 }
 
-.auth-nav__link-tel {
+.site-nav__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.auth-nav__link.tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -148,7 +168,7 @@
   letter-spacing: 0.01em;
 }
 
-.form-button, .form__textarea, .form__icon, .form__input, .bcard-set-img, .button-close, .footer__button, .footer__icon, .footer__icon-linck, .footer__section-icon, .address__link-color, .address__link, .customers__icon, .services__link, .icon-smm__icon, .icon-smm__linck, .icon-smm__block, .button {
+.form-button, .form__textarea, .form__icon, .form__input, .bcard-set-img, .button-close, .footer__button, .footer__icon, .footer__icon-linck, .footer__section-icon, .address__link-color, .address__link, .customers__icon, .services__link, .icon-smm__icon, .icon-smm__linck, .icon-smm__block, .button, .auth-nav__icon-tel, .auth-nav__block, .auth-nav__icon-mailto, .auth-nav__link, .site-nav__link, .nav-container__button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -180,6 +200,161 @@
 .footer__studio {
   margin: 0;
   color: #ffffff;
+}
+
+.page-header {
+  position: relative;
+}
+
+.container {
+  width: 480px;
+  height: 60px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.nav-container__button {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 276px;
+  padding: 0;
+  background: #ffffff;
+  border: none;
+  fill: #212121;
+  transition-property: fill, cursor;
+}
+
+.nav-container__icon-menu {
+  display: none;
+}
+
+.nav-container__button.is-open .nav-container__icon-menu {
+  display: block;
+}
+
+.nav-container__button.is-open .nav-container__icon-cross {
+  display: none;
+}
+
+.nav-container__icon-color:hover, .nav-container__icon-color:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  width: 480px;
+  height: 796px;
+  left: 0;
+  top: 100%;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+.menu-container.is-open {
+  display: block;
+}
+
+.site-nav {
+  margin-top: 48px;
+  margin-left: 40px;
+}
+
+.site-nav__link {
+  color: #212121;
+  transition-property: color, cursor;
+}
+.site-nav__link:hover, .site-nav__link:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.site-nav__fover {
+  margin-bottom: 32px;
+}
+.site-nav__fover:last-child {
+  margin-bottom: 0;
+}
+
+.site-nav__fover:hover .site-nav__link,
+.site-nav__fover:focus .site-nav__link {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.auth-nav {
+  display: block;
+  margin-top: 306px;
+  margin-left: 40px;
+}
+
+.auth-nav__item {
+  margin-bottom: 32px;
+}
+.auth-nav__item:last-child {
+  margin-bottom: 0;
+}
+
+.auth-nav__link {
+  align-items: center;
+  color: #2196f3;
+  transition-property: color, cursor;
+}
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.auth-nav__link.tel {
+  color: #757575;
+}
+
+.auth-nav__icon-mailto {
+  display: none;
+  margin: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  fill: #afb1b8;
+  transition-property: fill, cursor;
+}
+.auth-nav__icon-mailto:hover, .auth-nav__icon-mailto:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.auth-nav__link:hover .auth-nav__icon-mailto,
+.auth-nav__link:focus .auth-nav__icon-mailto {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.auth-nav__block {
+  margin: 0px;
+  transition-property: fill, cursor;
+}
+
+.auth-nav__icon-tel {
+  display: none;
+  margin: 0px 10px 0px 0px;
+  padding: 0;
+  fill: #afb1b8;
+  transition-property: fill, cursor;
+}
+.auth-nav__icon-tel:hover, .auth-nav__icon-tel:focus {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.auth-nav__link:hover .auth-nav__icon-tel,
+.auth-nav__link:focus .auth-nav__icon-tel {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.auth-nav__block {
+  margin: 0px;
+  transition-property: fill, cursor;
 }
 
 /* HERO */

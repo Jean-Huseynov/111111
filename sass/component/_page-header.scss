@@ -96,6 +96,14 @@
   }
 }
 
+.site-nav__fover {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .site-nav__fover:hover .site-nav__link,
 .site-nav__fover:focus .site-nav__link {
   color: $color-hover-focus;
@@ -107,6 +115,14 @@
   display: block;
   margin-top: 306px;
   margin-left: 40px;
+}
+
+.auth-nav__item {
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 // tel
@@ -127,13 +143,14 @@
 }
 
 .auth-nav__link.tel {
-  @extend %auth-nav__link-tel;
+  @extend %auth-nav__mailto__tel;
 
   color: $color-text;
 }
 
 .auth-nav__icon-mailto {
   // display: flex;
+  display: none;
   margin: 0px 10px 0px 0px;
   padding: 0px 0px 0px 0px;
 
@@ -164,6 +181,7 @@
 }
 
 .auth-nav__icon-tel {
+  display: none;
   // display: flex;
   margin: 0px 10px 0px 0px;
   padding: 0;

@@ -50,7 +50,7 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.02em;
 }
 
-// Auth-nav
+// Auth-nav mailto
 // @extend %auth-nav__mailto__text;
 %auth-nav__mailto__text {
   text-decoration: none;
@@ -62,8 +62,9 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.02em;
 }
 
-// @extend %auth-nav__link-tel;
-.auth-nav__link-tel {
+// Auth-nav tel
+// @extend %auth-nav__mailto__tel;
+%auth-nav__mailto__tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
