@@ -273,13 +273,13 @@
 }
 .nav-container__button {
   position: absolute;
-  margin-top: 10px;
-  margin-left: 276px;
-  padding: 0;
   background: #ffffff;
   border: none;
   fill: #212121;
   transition-property: fill, cursor;
+  margin-top: 10px;
+  margin-left: 276px;
+  padding: 0;
 }
 @media screen and (min-width: 481px) {
   .nav-container__button {
@@ -362,7 +362,7 @@
 
 .auth-nav__link {
   align-items: center;
-  color: #2196f3;
+  color: #757575;
   transition-property: color, cursor;
 }
 .auth-nav__link:hover, .auth-nav__link:focus {
@@ -371,7 +371,7 @@
 }
 
 .auth-nav__link.tel {
-  color: #757575;
+  color: #2196f3;
 }
 
 .auth-nav__icon-mailto {

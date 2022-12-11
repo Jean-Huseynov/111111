@@ -16,25 +16,25 @@
 //   position: relative;
 // }
 
-@media screen and (min-width: 480px) {
-  .nav-container__button {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 276px;
-    padding: 0;
-    background: $color-accent;
-    border: none;
-    fill: $color-title;
+.nav-container__button {
+  position: absolute;
+  background: $color-accent;
+  border: none;
+  fill: $color-title;
 
-    transition-property: fill, cursor;
-    @extend %animation;
+  transition-property: fill, cursor;
+  @extend %animation;
 
-    @media screen and (min-width: 481px) {
-      display: none;
-    }
+  margin-top: 10px;
+  margin-left: 276px;
+  padding: 0;
+
+  @media screen and (min-width: 481px) {
+    display: none;
   }
 }
 
+// @media screen and (min-width: 480px)
 .nav-container__icon-menu {
   display: none;
 }
@@ -130,9 +130,10 @@
 // tel
 .auth-nav__link {
   align-items: center;
+
   @extend %auth-nav__mailto__text;
 
-  color: $color-hover-focus;
+  color: $color-text;
 
   transition-property: color, cursor;
   @extend %animation;
@@ -146,7 +147,7 @@
 
 .auth-nav__link.tel {
   @extend %auth-nav__mailto__tel;
-  color: $color-text;
+  color: $color-hover-focus;
 }
 
 .auth-nav__icon-mailto {
