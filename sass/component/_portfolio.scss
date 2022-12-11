@@ -1,182 +1,170 @@
-// /* --- PORTFOLIO --- */
-// .container {
-//     width: 1200px;
-//     padding: 0 15px;
-//     margin: 0 auto;
-// }
+/* --- PORTFOLIO --- */
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 
-// .header-container {
-//     display: flex;
-//     justify-content: space-between;
-// }
+.header-container container {
+  display: flex;
+}
 
-// .header-container container {
-//     display: flex;
-// }
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 
+// /* button */
+// /* section */
+.portfolio {
+  padding: 94px 0px 94px 0px;
+}
 
-// .page-header {
-//     border-bottom: 1px solid #ECECEC;
-// }
+// /* h1 */
+.portfolio__title {
+  display: flex;
+  margin: 0px;
+  font-size: 0.1px;
+  line-height: 1.16px;
+  color: rgba(0, 0, 0, 0);
+}
 
-// // /* button */
-// // /* section */
-// .portfolio {
-//     padding: 94px 0px 94px 0px;
-// }
+// /* div */
+@media screen and (min-width: 400px) {
+  .portfolio__container {
+    width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
 
+// /* ul  portfolio-blok */
+.portfolio__blok {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 15px 8px;
+  margin: 0;
+}
 
-// // /* h1 */
-// .portfolio__title {
-//     display: flex;
-//     margin: 0px;
-//     font-size: 0.1px;
-//     line-height: 1.16px;
-//     color: rgba(0, 0, 0, 0);
-// }
+// /* li */
+.portfolio__button {
+  padding: 6px 22px;
 
-// // /* div */
-// .portfolio__container {
-//     width: 1200px;
-//     padding: 0 15px;
-//     margin: 0 auto;
+  @extend %button-portfolio;
 
-// }
+  color: $color-title;
 
-// // /* ul  portfolio-blok */
-// .portfolio__blok {
-//     justify-content: center;
-//         display: flex;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0px;
 
-//     display: flex;
-//     grid-column-gap: 8px;
-//     margin: 0;
+  transition-property: color, background, box-shadow, border-radius;
+  @extend %animation;
 
-// }
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    background: $color-hover-focus;
+    cursor: pointer;
 
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
 
-// // /* li */
-// .portfolio__button {
-//     display: flex;
+// /* IMG */
+.portfolio__button-img {
+  margin: 50px 0px 0px 0px;
+  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-//     padding: 6px 22px;
+.portfolio__background {
+  transition-property: box-shadow;
+  @extend %animation;
 
-//     @extend %button-portfolio;
-    
-//     color: $color-title;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
 
-//     background: #F5F4FA;
-//     border-radius: 4px;
-//     border: 0px;
+// /* анимация */
+// /* div pos-abs */
+.portfolio__pos-abs {
+  position: relative;
+  overflow: hidden;
+}
 
-//     transition-property: color, background, box-shadow, border-radius;
-//     @extend %animation;
+// /* div background-block */
+.portfolio__background-block {
+  position: absolute;
 
+  margin: 0;
+  padding: 0;
 
-//     &:hover,
-//         &:focus {
-//             color: $color-accent;
-//             background: $color-hover-focus;
-//             cursor: pointer;
-    
-//             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-//             border-radius: 4px;
-//         }
-// }
+  align-items: center;
+  width: 450px;
+  height: 357.562px;
+  left: 0px;
+  top: 0px;
 
-// // /* IMG */
-// .portfolio__button-img {
-//     margin: 50px 0px 0px 0px;
-//     grid-gap: 30px;
-//     display: flex;
-//     flex-wrap: wrap;
+  background: rgba(33, 150, 243, 0.9);
 
-// }
+  transform: translatey(100%);
 
-// .portfolio__background {
-//     transition-property: box-shadow;
-//     @extend %animation;
+  transition-property: transform;
+  @extend %animation;
+}
 
-// &:hover,
-//     &:focus {
-//         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-//     }
-// }
+.portfolio__background:hover .portfolio__background-block {
+  transform: translatey(0);
+}
 
-// // /* анимация */
-// // /* div pos-abs */
-// .portfolio__pos-abs {
-//     position: relative;
-//     overflow: hidden;
-// }
+// /* p background-text */
+.portfolio__background-text {
+  font-family: "Roboto";
+  font-style: normal;
+  margin: 0;
+  padding: 63px 24px;
 
-// // /* div background-block */
-// .portfolio__background-block {
-//     position: absolute;
+  @extend %portfolio__text-animatoin;
 
-//     margin: 0;
-//     padding: 0;
+  color: $color-accent;
+}
 
-//     align-items: center;
-//     width: 370px;
-//     height: 294px;
-//     left: 0px;
-//     top: 0px;
+// /* text */
+// /* portfolio - h2 */
+.portfolio__background-title {
+  display: flex;
+  margin: 0px 0px 0px 0px;
 
-//     background: rgba(33, 150, 243, 0.9);
+  @extend %portfolio__img-blok-title;
 
-//     transform: translatey(100%);
+  color: $color-title;
+}
 
-//     transition-property: transform;
-//     @extend %animation;
+// /* portfolio - p */
+.portfolio__background-line {
+  display: flex;
+  margin: 4px 0px 0px 0px;
 
-    
-// }
+  @extend %portfolio__img-blok-text;
 
-// .portfolio__background:hover .portfolio__background-block {
-//     transform: translatey(0);
-// }
+  color: $color-text;
+}
 
-// // /* p background-text */
-// .portfolio__background-text {
-
-//     font-family: 'Roboto';
-//     font-style: normal;
-//     margin: 0;
-//     padding: 63px 24px;
-
-//     @extend %portfolio__text-animatoin;
-
-//     color: $color-accent;
-// }
-
-
-// // /* text */
-// // /* portfolio - h2 */
-// .portfolio__background-title {
-//     display: flex;
-//     margin: 0px 0px 0px 0px;
-
-//     @extend %portfolio__img-blok-title;
-
-//     color: $color-title;
-// }
-
-
-
-// // /* portfolio - p */
-// .portfolio__background-line {
-//     display: flex;
-//     margin: 4px 0px 0px 0px;
-
-//     @extend %portfolio__img-blok-text;
-
-//     color: $color-text;
-// }
-
-// // /* div img-title-line */
-// .portfolio-block__title-line {
-//     border: 1px solid #EEEEEE;
-//     padding: 20px 0px 24px 24px;
-// }
+// /* div img-title-line */
+.portfolio-block__title-line {
+  border: 1px solid #eeeeee;
+  padding: 20px 0px 24px 24px;
+}

@@ -57,25 +57,39 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 }
 
 // Auth-nav tel
 // @extend %auth-nav__mailto__tel;
 %auth-nav__mailto__tel {
+  text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+// @extend %auth-nav__network-link;
+%auth-nav__network-link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  // * identical to box height, or 122% *
   letter-spacing: 0.02em;
 }
 
 // hero-container title
 // @extend %hero-container__title;
 %hero-container__title {
+  text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;

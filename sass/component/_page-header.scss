@@ -3,34 +3,36 @@
   position: relative;
 }
 
-.container {
-  width: 480px;
-  height: 60px;
-  padding: 0 15px;
-  margin: 0 auto;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    height: 60px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
 
 // .nav-container {
 //   position: relative;
 // }
 
-.nav-container__button {
-  position: absolute;
-  margin-top: 10px;
-  margin-left: 276px;
-  padding: 0;
-  background: $color-accent;
-  border: none;
-  fill: $color-title;
+@media screen and (min-width: 480px) {
+  .nav-container__button {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 276px;
+    padding: 0;
+    background: $color-accent;
+    border: none;
+    fill: $color-title;
 
-  transition-property: fill, cursor;
-  @extend %animation;
+    transition-property: fill, cursor;
+    @extend %animation;
 
-  // &:hover,
-  // &:focus {
-  //   fill: $color-hover-focus;
-  //   cursor: pointer;
-  // }
+    @media screen and (min-width: 481px) {
+      display: none;
+    }
+  }
 }
 
 .nav-container__icon-menu {
@@ -144,7 +146,6 @@
 
 .auth-nav__link.tel {
   @extend %auth-nav__mailto__tel;
-
   color: $color-text;
 }
 
@@ -210,4 +211,40 @@
 
   transition-property: fill, cursor;
   @extend %animation;
+}
+
+.auth-nav__social-networks {
+  // position: relative;
+  display: flex;
+  grid-column-gap: 10px;
+  align-items: center;
+}
+
+.auth-nav_line {
+  // position: absolute;
+  width: 22px;
+  height: 0px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.auth-nav__instagram {
+  @extend %auth-nav__network-link;
+  color: $color-hover-focus;
+}
+
+.auth-nav__twitter {
+  @extend %auth-nav__network-link;
+  color: $color-hover-focus;
+}
+
+.auth-nav__facebook {
+  @extend %auth-nav__network-link;
+  color: $color-hover-focus;
+}
+
+.auth-nav__linkedIn {
+  @extend %auth-nav__network-link;
+  color: $color-hover-focus;
 }
