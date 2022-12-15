@@ -271,16 +271,23 @@
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: red;
+  }
+}
 
 .nav-container__button {
   position: absolute;
-  background: #ffffff;
+  background: none;
   border: none;
   fill: #212121;
   transition-property: fill, cursor;
   margin-top: 10px;
   margin-left: 276px;
   padding: 0;
+  z-index: 1;
 }
 @media screen and (min-width: 481px) {
   .nav-container__button {
@@ -291,13 +298,28 @@
 .nav-container__icon-menu {
   display: none;
 }
+@media screen and (min-width: 481px) {
+  .nav-container__icon-menu {
+    display: none;
+  }
+}
 
 .nav-container__button.is-open .nav-container__icon-menu {
   display: block;
 }
+@media screen and (min-width: 481px) {
+  .nav-container__button.is-open .nav-container__icon-menu {
+    display: none;
+  }
+}
 
 .nav-container__button.is-open .nav-container__icon-cross {
   display: none;
+}
+@media screen and (min-width: 481px) {
+  .nav-container__button.is-open .nav-container__icon-cross {
+    display: none;
+  }
 }
 
 .nav-container__icon-color:hover, .nav-container__icon-color:focus {
@@ -311,7 +333,7 @@
   width: 480px;
   height: 796px;
   left: 0;
-  top: 100%;
+  top: 0;
   padding: 0;
   margin: 0;
   background: #ffffff;
@@ -458,9 +480,15 @@
   padding-bottom: 118px;
   text-align: center;
   background-size: cover;
-  background-color: #C4C4C4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobail_hero.jpg);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url();
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-container {
+    width: 768px;
+    background-color: red;
+  }
 }
 
 .hero {
@@ -880,6 +908,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
   padding-left: 15px;
   padding-top: 95px;
   background: rgba(0, 0, 0, 0.2);
@@ -1247,8 +1276,4 @@ img {
 
 blackout body .blackout {
   position: relative;
-}
-
-body.responsive {
-  max-width: 480px;
 }/*# sourceMappingURL=main.css.map */
