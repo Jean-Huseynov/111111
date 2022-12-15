@@ -1,26 +1,42 @@
 // Наші переваги
 // section
 .benefits {
-    padding: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 // div
 .benefits-container {
-    width: 480px;
-    padding: 0 15px;
-    margin: 0px auto;
+  width: 480px;
+  padding: 0 15px;
+  margin: 0px auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
+}
+
+.card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 768px;
+    grid-column-gap: 30px;
+    flex-wrap: wrap;
+  }
 }
 
 // h2
 .benefits__title {
-    margin: 0px;
-    font-size: 0.1px;
-    line-height: 1.16px;
-    color: rgba(0, 0, 0, 0);
+  margin: 0px;
+  font-size: 0.1px;
+  line-height: 1.16px;
+  color: rgba(0, 0, 0, 0);
 }
-
 
 // ul
 // .card-set {
@@ -29,55 +45,64 @@
 
 // // span
 .card-set__block {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 
-    height: 120px;
-    width: 450px;
+  height: 120px;
+  width: 450px;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    background: #F5F4FA;
-    border-radius: 4px;
+  background: #f5f4fa;
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 }
-
 
 // svg
 .card-set__img {
-    display: flex;
-    height: 70px;
-    width: 70px;
+  display: flex;
+  height: 70px;
+  width: 70px;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    fill: $color-title;
+  fill: $color-title;
 }
-
 
 // benefits - h3
 .card-set__title {
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  margin-top: 30px;
 
-@extend %Main-page__block-title;
+  @extend %Main-page__block-title;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
-
 
 // benefits - p
 .card-set__line {
-    display: flex;
-margin: 10px 0px 30px 15px;
-    @extend %Main-page__text;
+  display: flex;
+  margin: 10px 0px 30px 15px;
+  @extend %Main-page__text;
 
-    color: $color-text;
+  color: $color-text;
 
-// &:last-child {
-// margin-bottom: 0;
-// }
+  // &:last-child {
+  // margin-bottom: 0;
+  // }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: 0;
+    width: 354px;
+  }
 }
-
