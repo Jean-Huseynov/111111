@@ -1,226 +1,315 @@
 // Footer
 
 .footer {
-    width: 480px;
-        padding: 0 15px;
-        margin: 0 auto;
-    background: #2F303A;
+  width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding: 60px 0;
+  background: #2f303a;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    width: 1600px;
+  }
 }
 
 .footer__container {
-    padding: 60px 0;
-    justify-content: center;
-    // align-items: baseline;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    width: 1200px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 70px;
+    align-items: baseline;
+  }
 }
 
-
+@media screen and (min-width: 768px) {
+  .footer__block-modifier {
+    display: flex;
+    grid-gap: 165px;
+    justify-content: center;
+  }
+}
 
 .footer__block-address {
-    text-align: center;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+//address
 
+@media screen and (min-width: 1600px) {
+  .footer__address {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
 
-
-// //address
-// .footer__address {
-//     justify-content: center;
-//     margin: 0;
-// }
-
-
-
+  .address__block {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .address__item {
-    margin-top: 28px;
+  margin-top: 28px;
 }
-
 
 // address - mailto - tel.
 .address__link {
-    justify-content: center;
+  justify-content: center;
 
-@extend %Main-page__text;
+  @extend %Main-page__text;
 
-    color: $color-address-text;
+  color: $color-address-text;
 
-    transition-property: color;
-@extend %animation;
+  transition-property: color;
+  @extend %animation;
 
-    &:hover,
-        &:focus {
-            color: $color-hover-focus;
-        }
+  &:hover,
+  &:focus {
+    color: $color-hover-focus;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 }
 
 .address__link-color {
-    color: $color-accent;
+  color: $color-accent;
 
-    transition-property: color;
-        @extend %animation;
+  transition-property: color;
+  @extend %animation;
 
-.address__link:hover &,
-.address__link:focus & {
+  .address__link:hover &,
+  .address__link:focus & {
     color: $color-hover-focus;
-}
+  }
 }
 
 .address__block .item {
+  margin: 0;
+  margin-top: 12px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1600px) {
     margin: 0;
-    margin-top: 12px;
+    margin-top: 9px;
+    text-align: left;
+  }
 }
-
-
-
-
-
 
 // footer-block div 2 ПРИЄДНУЙТЕСЬ
 .footer__block-smm {
-margin-top: 60px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
+
 .footer__title {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
 
-    @extend %Main-page__block-title;
+  @extend %Main-page__block-title;
 
-    color: $color-accent;
+  color: $color-accent;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1600px) {
+    text-align: left;
+  }
 }
 
 // /* ul */
 .footer__block-icon {
-    display: flex;
-    justify-content: center;
-    grid-column-gap: 10px;
+  display: flex;
+  justify-content: center;
+  grid-column-gap: 10px;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1600px) {
+    justify-content: flex-start;
+  }
 }
-
-
 
 // /* smm icon */
 // /* li */
 .footer__section-icon {
-    border-radius: 50%;
+  border-radius: 50%;
 
-    transition-property: background;
-@extend %animation;
+  transition-property: background;
+  @extend %animation;
 
-    &:hover,
-        &:focus {
-            background: $color-hover-focus;
-        }
+  &:hover,
+  &:focus {
+    background: $color-hover-focus;
+  }
 }
-
-
 
 // /* a */
 .footer__icon-linck {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 44px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 
-    transition-property: background;
-    @extend %animation;
+  transition-property: background;
+  @extend %animation;
 
-    &:hover,
-        &:focus {
-            background: $color-hover-focus;
-        }
+  &:hover,
+  &:focus {
+    background: $color-hover-focus;
+  }
 }
-
-
-
-
 
 // /* svg */
 .footer__icon {
-    fill: #FFFFFF;
+  fill: #ffffff;
 
-    transition-property: fill;
-    @extend %animation;
+  transition-property: fill;
+  @extend %animation;
 
-.footer-icon-block-linck:hover &,
-    .footer-icon-block-linck:focus & {
-        fill: #FFFFFF;
-    }
+  .footer-icon-block-linck:hover &,
+  .footer-icon-block-linck:focus & {
+    fill: #ffffff;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
 }
-
-
-
-
-
-
-
 
 // /* footer-email div 3 */
 .footer__email {
-    margin-top: 60px;
+  margin-top: 60px;
+  margin-left: 15px;
+
+  @media screen and (min-width: 768px) {
+    // margin-left: 159px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-left: 23px;
+  }
 }
 
 .footer__form {
-    justify-content: center;
-    gap: 12px;
-}
+  justify-content: center;
+  gap: 12px;
 
+  @media screen and (min-width: 768px) {
+    margin-left: 159px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    margin-left: 0;
+  }
+}
 
 .input__footer {
-    // /* position: absolute; */
-    width: 450px;
-    height: 50px;
-    padding: 15px 16px;
+  // /* position: absolute; */
+  width: 450px;
+  height: 50px;
+  padding: 15px 16px;
 
-    background-color: rgba(47, 48, 58, 1);
-    color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(47, 48, 58, 1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  //   @media screen and (min-width: 768px) {
+  //   }
+
+  //   @media screen and (min-width: 1600px) {
+  //     width: 358px;
+  //   }
 }
-
-
-
 
 .footer__button {
-    display: inline-flex;
-    align-items: center;
-    margin: 0;
-    gap: 10px;
-    margin: 20px 125px 0px 125px;
-    padding: 10px 28px;
-    border: 0;
-    min-width: 200px;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  gap: 10px;
+  margin: 20px 125px 0px 125px;
+  padding: 10px 28px;
+  border: 0;
+  min-width: 200px;
 
-    @extend %button;
+  @extend %button;
 
+  color: $color-accent;
+
+  background-color: rgba(33, 150, 243, 1);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition-property: color, background, cursor;
+  @extend %animation;
+
+  &:hover,
+  &:focus {
     color: $color-accent;
-
-    background-color: rgba(33, 150, 243, 1);
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    border-radius: 4px;
+    background: $color-hover-focus;
     cursor: pointer;
-    
-    transition-property: color, background, cursor;
-@extend %animation;
+  }
 
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
-&:hover,
-&:focus {
-        color: $color-accent;
-        background: $color-hover-focus;
-        cursor: pointer;
-    }
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    margin: 0;
+  }
 }
-
-
-
 
 .footer__button-svg {
-    fill: rgba(255, 255, 255, 1);
+  fill: rgba(255, 255, 255, 1);
 }
-
