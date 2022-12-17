@@ -1,87 +1,75 @@
 // Постійні клієнти Regular customers
 .customers {
-    padding: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-
-
-
 .customers {
-    width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
+  width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .customers-container {
-    padding: 60px 15px;
+  padding: 60px 15px;
 }
 
-
 .customers__title {
-    margin: 0;
-    margin-bottom: 30px;
-    
-    @extend %Main-page__title;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @extend %Main-page__title;
 }
 
 // /* логотип постійні клієнти */
 
 /* ul */
 .customers__icon-block {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 30px;
 }
-
 
 // /* li */
 .services__link {
-    display: flex;
+  display: flex;
 
-    height: 92px;
-    width: 170px;
-    margin: 0px;
-    border-radius: 4px;
-    justify-content: center;
+  height: 92px;
+  width: 170px;
+  margin: 0px;
+  border-radius: 4px;
+  justify-content: center;
 
-    border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
 
-    transition-property: border;
-    @extend %animation;
+  transition-property: border;
+  @extend %animation;
 
-
-    &:hover,
-        &:focus {
-            border: 1px solid #2196F3;
-        }
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
 }
-
-
-
 
 // /* a */
 .services__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 // /* svg */
 .customers__icon {
-    display: flex;
-    fill: #AFB1B8;
+  display: flex;
+  fill: #afb1b8;
 
-    transition-property: fill;
-    @extend %animation;
+  transition-property: fill;
+  @extend %animation;
 
-    .services__link:hover &,
-        .services__link:focus & {
-            fill: #2196F3;
-        }
+  .services__link:hover &,
+  .services__link:focus & {
+    fill: #2196f3;
+  }
 }

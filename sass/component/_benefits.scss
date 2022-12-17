@@ -4,6 +4,11 @@
   padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1600px) {
+    padding: 0;
+    padding-top: 94px;
+  }
 }
 
 // div
@@ -17,7 +22,10 @@
   }
 
   @media screen and (min-width: 1600px) {
-    width: 1600px;
+    display: flex;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0px auto;
   }
 }
 
@@ -28,6 +36,12 @@
     grid-column-gap: 30px;
     flex-wrap: wrap;
   }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    width: 1200px;
+    grid-column-gap: 30px;
+  }
 }
 
 // h2
@@ -36,6 +50,10 @@
   font-size: 0.1px;
   line-height: 1.16px;
   color: rgba(0, 0, 0, 0);
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
 }
 
 // ul
@@ -61,6 +79,21 @@
   @media screen and (min-width: 768px) {
     width: 354px;
   }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    height: 120px;
+    width: 270px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #f5f4fa;
+    border-radius: 4px;
+  }
 }
 
 // svg
@@ -73,6 +106,17 @@
   align-items: center;
 
   fill: $color-title;
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    height: 70px;
+    width: 70px;
+
+    justify-content: center;
+    align-items: center;
+
+    fill: $color-title;
+  }
 }
 
 // benefits - h3
@@ -86,6 +130,9 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+  }
+
+  @media screen and (min-width: 1600px) {
   }
 }
 
@@ -104,5 +151,16 @@
     display: block;
     margin-left: 0;
     width: 354px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    width: 270px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+    @extend %Main-page__text;
+
+    color: $color-text;
   }
 }
