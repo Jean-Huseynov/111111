@@ -4,12 +4,10 @@
 }
 
 .container {
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    height: 60px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+  width: 480px;
+  height: 60px;
+  padding: 0 15px;
+  margin: 0 auto;
 
   @media screen and (min-width: 768px) {
     width: 768px;
@@ -33,6 +31,12 @@
   }
 }
 
+.nav-container {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+  }
+}
+
 // .nav-container {
 .nav-container__button {
   position: absolute;
@@ -47,31 +51,22 @@
   margin-left: 276px;
   padding: 0;
   z-index: 1;
-  @media screen and (min-width: 481px) {
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-// @media screen and (min-width: 480px)
 .nav-container__icon-menu {
   display: none;
-  @media screen and (min-width: 481px) {
-    display: none;
-  }
 }
 
 .nav-container__button.is-open .nav-container__icon-menu {
   display: block;
-  @media screen and (min-width: 481px) {
-    display: none;
-  }
 }
 
 .nav-container__button.is-open .nav-container__icon-cross {
   display: none;
-  @media screen and (min-width: 481px) {
-    display: none;
-  }
 }
 
 .nav-container__icon-color {
@@ -87,10 +82,10 @@
 
   position: absolute;
 
-  width: 480px;
+  width: 100%;
   height: 796px;
-  left: 0;
   top: 0;
+  left: 0;
 
   padding: 0;
   margin: 0;
@@ -102,15 +97,17 @@
   &.is-open {
     display: block;
   }
-}
 
-// Site-nav
-@media screen and (min-width: 1600px) {
-  .nav-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1600px) {
     display: flex;
   }
 }
 
+// Site-nav
 .site-nav {
   margin-top: 48px;
   margin-left: 40px;
@@ -172,8 +169,8 @@
 }
 
 // fover
-@media screen and (min-width: 1600px) {
-  .site-nav__link::before {
+.site-nav__link::before {
+  @media screen and (min-width: 1600px) {
     position: absolute;
 
     margin: 0;
@@ -186,8 +183,10 @@
     background: rgba(33, 150, 243, 0);
     border-radius: 2px;
   }
+}
 
-  .site-nav__link::after {
+.site-nav__link::after {
+  @media screen and (min-width: 1600px) {
     position: absolute;
 
     margin: 0;
@@ -200,11 +199,13 @@
     border-radius: 2px;
 
     transition-property: background, cursor;
-    @extend %animation;
+    // @extend %animation;
   }
+}
 
-  .site-nav__link:hover::after,
-  .site-nav__link:focus::after {
+.site-nav__link:hover::after,
+.site-nav__link:focus::after {
+  @media screen and (min-width: 1600px) {
     background: $color-hover-focus;
     cursor: pointer;
   }
@@ -339,7 +340,7 @@
 
 .auth-nav__block {
   margin: 0px;
-
+  display: none;
   transition-property: fill, cursor;
   @extend %animation;
 
@@ -360,24 +361,64 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
 }
 
 .auth-nav__instagram {
   @extend %auth-nav__network-link;
   color: $color-hover-focus;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
 }
 
 .auth-nav__twitter {
   @extend %auth-nav__network-link;
   color: $color-hover-focus;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
 }
 
 .auth-nav__facebook {
   @extend %auth-nav__network-link;
   color: $color-hover-focus;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
 }
 
 .auth-nav__linkedIn {
   @extend %auth-nav__network-link;
   color: $color-hover-focus;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1600px) {
+    display: none;
+  }
 }

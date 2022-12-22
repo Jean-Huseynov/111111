@@ -277,6 +277,18 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
 }
 
+// portfolio img-blok text
+// @extend %portfolio__img-blok-text;
+%portfolio__img-blok-text {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
 // @extend %animation;
 %animation {
   transition-duration: 250ms;
