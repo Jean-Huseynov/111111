@@ -1,10 +1,8 @@
 /* --- PORTFOLIO --- */
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+.container {
+  width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -36,12 +34,10 @@
 }
 
 // /* div */
-@media screen and (min-width: 400px) {
-  .portfolio__container {
-    width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+.portfolio__container {
+  width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 // /* ul  portfolio-blok */
