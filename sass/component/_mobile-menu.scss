@@ -52,7 +52,8 @@
 }
 
 .menu-container {
-  opacity: 0;
+  // opacity: 0;
+  display: none;
 
   position: fixed;
 
@@ -69,7 +70,8 @@
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
   &.is-open {
-    opacity: 1;
+    // opacity: 1;
+    display: block;
   }
 
   @media screen and (min-width: 768px) {
