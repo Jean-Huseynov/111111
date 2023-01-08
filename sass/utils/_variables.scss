@@ -33,7 +33,7 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
@@ -47,6 +47,18 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+// @extend %auth-nav__link;
+%auth-nav__link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+
   letter-spacing: 0.02em;
 }
 
@@ -285,7 +297,7 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 

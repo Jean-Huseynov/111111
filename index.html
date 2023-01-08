@@ -23,29 +23,6 @@
             <span class="nav-container__logo-web">Web</span
             ><span class="nav-container__logo-studio">Studio</span>
           </a>
-          <button
-            type="button"
-            class="nav-container__button is-open"
-            arial-expanded="false"
-            arial-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              class="nav-container__icon-color"
-              width="40px"
-              height="40px"
-              aria-label="переключатель мобильного меню"
-            >
-              <use
-                class="nav-container__icon-menu"
-                xlink:href="#icon-menu_40px"
-              ></use>
-              <use
-                class="nav-container__icon-cross"
-                xlink:href="#icon-close-black"
-              ></use>
-            </svg>
-          </button>
           <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav">
               <li class="site-nav__fover">
@@ -106,6 +83,89 @@
             </ul>
           </div>
         </nav>
+        <!-- Mobail -->
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="site-nav">
+            <li class="site-nav__fover">
+              <a href="./index.html" class="site-nav__link">Студія</a>
+            </li>
+            <li class="site-nav__fover">
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+            </li>
+            <li class="site-nav__fover">
+              <a href="#" class="site-nav__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="auth-nav">
+            <!-- mailto -->
+            <li class="auth-nav__item">
+              <a href="tel:+380961111111" class="auth-nav__link tel">
+                <div class="auth-nav__block item-tel">
+                  <svg class="auth-nav__icon-tel" width="10" height="16">
+                    <use
+                      xlink:href="#icon-smartphone"
+                      class="auth-nav__tel"
+                    ></use>
+                  </svg>
+                </div>
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="auth-nav__item">
+              <a href="mailto:info@devstudio.com" class="auth-nav__link">
+                <div class="auth-nav__block">
+                  <svg class="auth-nav__icon-mailto" width="16" height="12">
+                    <use
+                      xlink:href="#icon-envelope-hover"
+                      class="auth-nav__mailto"
+                    ></use>
+                  </svg>
+                </div>
+                info@devstudio.com</a
+              >
+            </li>
+            <div class="auth-nav__social-networks">
+              <li class="auth-nav__network-link">
+                <a href="#" class="auth-nav__instagram">Instagram</a>
+              </li>
+              <div class="auth-nav_line"></div>
+              <li class="auth-nav__network-link">
+                <a href="#" class="auth-nav__twitter">Twitter</a>
+              </li>
+              <div class="auth-nav_line"></div>
+              <li class="auth-nav__network-link">
+                <a href="#" class="auth-nav__facebook">Facebook</a>
+              </li>
+              <div class="auth-nav_line"></div>
+              <li class="auth-nav__network-link">
+                <a href="#" class="auth-nav__linkedIn">LinkedIn</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="nav-container__button is-open"
+          arial-expanded="false"
+          arial-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="nav-container__icon-color"
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="nav-container__icon-menu"
+              xlink:href="#icon-menu_40px"
+            ></use>
+            <use
+              class="nav-container__icon-cross"
+              xlink:href="#icon-close-black"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="page-main">
@@ -645,6 +705,12 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <!-- icon infa -->
     <svg display="none">
       <symbol id="icon-antenna-1" viewBox="0 0 32 32">
@@ -823,5 +889,6 @@
         ></path>
       </symbol>
     </svg>
+    <!-- <div class="menu-container" id="menu-container" data-menu> </div> -->
   </body>
 </html>

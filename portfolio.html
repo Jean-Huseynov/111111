@@ -23,29 +23,7 @@
             <span class="nav-container__logo-web">Web</span
             ><span class="nav-container__logo-studio">Studio</span>
           </a>
-          <button
-            type="button"
-            class="nav-container__button is-open"
-            arial-expanded="false"
-            arial-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              class="nav-container__icon-color"
-              width="40px"
-              height="40px"
-              aria-label="переключатель мобильного меню"
-            >
-              <use
-                class="nav-container__icon-menu"
-                xlink:href="#icon-menu_40px"
-              ></use>
-              <use
-                class="nav-container__icon-cross"
-                xlink:href="#icon-close-black"
-              ></use>
-            </svg>
-          </button>
+
           <div class="menu-container" id="menu-container" data-menu>
             <ul class="site-nav">
               <li class="site-nav__fover">
@@ -106,6 +84,29 @@
             </ul>
           </div>
         </nav>
+        <button
+          type="button"
+          class="nav-container__button is-open"
+          arial-expanded="false"
+          arial-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="nav-container__icon-color"
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="nav-container__icon-menu"
+              xlink:href="#icon-menu_40px"
+            ></use>
+            <use
+              class="nav-container__icon-cross"
+              xlink:href="#icon-close-black"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main class="page-main">
@@ -434,6 +435,13 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <!-- icon infa -->
     <svg display="none">
       <symbol id="icon-antenna-1" viewBox="0 0 32 32">
@@ -605,6 +613,11 @@
         <path
           d="m8.442 16.537-.147-.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"
         />
+      </symbol>
+      <symbol id="icon-menu_40px" viewBox="0 0 32 32">
+        <path
+          d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"
+        ></path>
       </symbol>
     </svg>
   </body>

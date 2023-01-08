@@ -10,7 +10,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
@@ -231,7 +231,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -268,11 +268,8 @@
   color: #ffffff;
 }
 
-.page-header {
-  position: relative;
-}
-
 .container {
+  position: relative;
   width: 480px;
   height: 60px;
   padding: 0 15px;
@@ -286,8 +283,6 @@
 @media screen and (min-width: 1600px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
   }
 }
 
@@ -313,7 +308,9 @@
   fill: #212121;
   transition-property: fill, cursor;
   margin-top: 10px;
-  margin-left: 276px;
+  right: 0;
+  background: transparent;
+  top: 0;
   padding: 0;
   z-index: 1;
 }
@@ -341,10 +338,10 @@
 }
 
 .menu-container {
-  display: none;
+  opacity: 0;
   position: fixed;
   width: 100%;
-  height: 796px;
+  height: 100%;
   top: 0;
   left: 0;
   padding: 0;
@@ -353,7 +350,7 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 .menu-container.is-open {
-  display: block;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -1619,10 +1616,26 @@
 }
 
 /* --- PORTFOLIO --- */
+.page-header {
+  display: block;
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   width: 480px;
+  height: 60px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header-container {
@@ -1632,10 +1645,6 @@
 
 .header-container container {
   display: flex;
-}
-
-.page-header {
-  border-bottom: 1px solid #ececec;
 }
 
 .portfolio {
@@ -1763,6 +1772,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 

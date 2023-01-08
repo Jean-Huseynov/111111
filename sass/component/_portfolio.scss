@@ -1,8 +1,22 @@
 /* --- PORTFOLIO --- */
+.page-header {
+  display: block;
+  border-bottom: 1px solid #ececec;
+}
+
 .container {
   width: 480px;
+  height: 60px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 1200px;
+  }
 }
 
 .header-container {
@@ -12,10 +26,6 @@
 
 .header-container container {
   display: flex;
-}
-
-.page-header {
-  border-bottom: 1px solid #ececec;
 }
 
 // /* button */
