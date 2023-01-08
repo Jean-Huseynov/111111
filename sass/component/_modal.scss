@@ -37,6 +37,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   // transform: scale(1) translate(-50%, -50%);
+
+  @media screen and (min-width: 1600px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .button-close {
@@ -186,6 +191,10 @@
 
     color: rgba(117, 117, 117, 0.5);
   }
+
+  @media screen and (min-width: 1600px) {
+    width: 448px;
+  }
 }
 
 // .textarea {
@@ -211,7 +220,7 @@
 }
 
 .checkbox__label.text {
-  @extend %Main-page__text;
+  @extend %checkbox__label-text;
 
   color: $color-text;
 }
@@ -248,7 +257,7 @@
 
 .checkbox__link {
   position: relative;
-  @extend %Main-page__text;
+  @extend %checkbox__label-text;
 
   color: rgba(33, 150, 243, 1);
   border-bottom: 1px solid rgba(33, 150, 243, 1);

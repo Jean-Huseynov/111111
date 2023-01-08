@@ -221,6 +221,10 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1600px) {
+    line-height: 1.15;
+  }
 }
 
 // modal text
@@ -328,4 +332,23 @@ $color-address-text: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+}
+
+// Moodal
+// @extend %checkbox__label-text;
+%checkbox__label-text {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1600px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
