@@ -5,7 +5,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
     padding: 0;
     padding-top: 94px;
   }
@@ -21,7 +22,7 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     width: 1200px;
     padding: 0 15px;
@@ -37,7 +38,7 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     width: 1200px;
     grid-column-gap: 30px;
@@ -51,7 +52,7 @@
   line-height: 1.16px;
   color: rgba(0, 0, 0, 0);
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -80,7 +81,7 @@
     width: 354px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin: 0;
     padding: 0;
@@ -107,7 +108,7 @@
 
   fill: $color-title;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     height: 70px;
     width: 70px;
@@ -132,7 +133,7 @@
     display: block;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -153,7 +154,7 @@
     width: 354px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     width: 270px;
     margin-top: 10px;

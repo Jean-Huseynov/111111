@@ -11,12 +11,12 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@
 }
 
 .nav-container {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -102,7 +102,7 @@
     display: flex;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -112,13 +112,13 @@
   margin-top: 48px;
   margin-left: 40px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 // site-nav__fover
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .site-nav__fover {
     display: flex;
     position: relative;
@@ -147,7 +147,7 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -170,7 +170,7 @@
 
 // fover
 .site-nav__link::before {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
 
     margin: 0;
@@ -186,7 +186,7 @@
 }
 
 .site-nav__link::after {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
 
     margin: 0;
@@ -205,7 +205,7 @@
 
 .site-nav__link:hover::after,
 .site-nav__link:focus::after {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     background: $color-hover-focus;
     cursor: pointer;
   }
@@ -217,7 +217,7 @@
   margin-top: 306px;
   margin-left: 40px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
   }
@@ -248,7 +248,7 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -260,7 +260,7 @@
   color: $color-hover-focus;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .auth-nav__mailto {
     display: flex;
   }
@@ -282,7 +282,7 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -299,13 +299,13 @@
   transition-property: fill, cursor;
   @extend %animation;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 // * tel *
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .auth-nav__tel {
     display: flex;
   }
@@ -327,7 +327,7 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -344,7 +344,7 @@
   transition-property: fill, cursor;
   @extend %animation;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -366,7 +366,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -379,7 +379,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -392,7 +392,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -405,7 +405,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -418,7 +418,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }

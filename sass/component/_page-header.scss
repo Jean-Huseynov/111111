@@ -4,7 +4,7 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
@@ -47,7 +47,7 @@
   &:first-child {
     margin-left: 88px;
 
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-left: 93px;
     }
   }
@@ -125,7 +125,7 @@
     margin-left: 96px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
     margin-left: 305px;

@@ -219,6 +219,8 @@
   display: flex;
   grid-column-gap: 10px;
   align-items: center;
+
+  margin-top: 64px;
 }
 
 // SMM
@@ -230,7 +232,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -243,7 +245,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -256,7 +258,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -269,7 +271,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }

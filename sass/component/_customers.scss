@@ -18,7 +18,8 @@
     padding-bottom: 60px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
     padding: 0;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -34,7 +35,7 @@
   @media screen and (min-width: 768px) {
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -51,7 +52,7 @@
   @media screen and (min-width: 768px) {
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -63,8 +64,9 @@
 .services__link {
   display: flex;
 
+  width: 210px;
   height: 92px;
-  width: 170px;
+
   margin: 0px;
   border-radius: 4px;
   justify-content: center;
@@ -77,6 +79,14 @@
   &:hover,
   &:focus {
     border: 1px solid #2196f3;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
